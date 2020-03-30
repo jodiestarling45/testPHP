@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="pushIn()" value="input">input number of array</button>
+<button onclick="checkfibonacci()">check the number </button>
+<script>
+    let arr=[];
+    function pushIn(){
+        let inputElement=+prompt("enter an number of fibonacci");
+        arr.push(inputElement);
+        console.log(arr);
+    }
+    function isFibonacci() {
+        for(let i=2; i<arr.length; i++)
+        {
+            if (arr[i]==arr[i-2]+arr[i-1]){
+                return true;
+            }else return false
+        }
+    }
+    function checkfibonacci() {
+        if (isFibonacci()){
+            alert("this is fibonacci")
+        }else
+            alert("this is not fibonacci")
+    }
+    
+
+
+</script>
+</body>
+</html>

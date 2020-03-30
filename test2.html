@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryToRemoveArray(Array,n){
+        for (let i = 0; i <Array.length; i++) {
+            if (Array[i]==n){
+                Array.splice(i,1);
+            }
+        }
+        return Array
+    }
+    //enter a number of array;
+    let arr=[12,54,23,12,65,89,56,45];
+    alert(arr);
+    //num to enter the number wanted to erase
+    let num=+prompt("enter the number to erase");
+    let result=tryToRemoveArray(arr,num);
+    alert(result);
+
+</script>
+</body>
+</html>

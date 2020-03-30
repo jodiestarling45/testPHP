@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" onclick="pushArray()" value="click to enter number of point">
+<input type="button" onclick="findMax()" value="find the max point">
+<script>
+        let arr=[];
+        function pushArray() {
+            let input=+prompt("point");
+            arr.push(input);
+            console.log(arr);
+            alert(arr.join(","));
+        }
+        function findMax() {
+            let max=arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (max<arr[i]){
+                    max=arr[i]
+                }
+                alert(max);
+            }
+        }
+</script>
+</body>
+</html>
